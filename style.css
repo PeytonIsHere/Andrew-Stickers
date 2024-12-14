@@ -106,3 +106,18 @@ section p {
 .inline-link:hover {
     text-decoration: underline;
 }
+.button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #772A29;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8B3D3C;
+}

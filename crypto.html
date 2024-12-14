@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hamburger Menu Icon -->
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<!-- Dropdown Menu -->
+<div id="dropdown-menu" class="menu hidden">
+    <a href="index.html">Home</a>
+    <a href="sticker.html">About</a>
+    <a href="crypto.html">Support</a>
+</div>
+
+<!-- Header -->
+<header id="home">
+    <h1>Good Job!</h1>
+    <h2>Support</h2>
+</header>
+
+<!-- Content -->
+<section id="about">
+    <h2>Currently Working on a Crypto Token for the Sticker!</h2>
+    <p>You can support me below</p>
+
+    <!-- Hidden Wallet Address -->
+    <div id="wallet-address" style="display: none;">48peM4MTjhBBkwBbkjg5uh5yZvqBHGnVedo4LJs3JtqpjB31uT4NhXSZzGAgUwkcHob56f9ANwQbcEuFAP6qSx4R8LEGLV7</div>
+
+    <!-- Button to Copy Wallet Address -->
+    <button class="button" onclick="copyWalletAddress()">Copy Monero Wallet</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
