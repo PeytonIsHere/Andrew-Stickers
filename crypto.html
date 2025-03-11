@@ -26,17 +26,29 @@
 
 <!-- Content -->
 <section id="about">
-    <h2>Currently Working on a Crypto Token for the Sticker!</h2>
-    <p>You can support me below</p>
+    <h2>Support</h2>
+    <p>You can support me below through monero</p>
 
-    <!-- Hidden Wallet Address -->
-    <div id="wallet-address" style="display: none;">48peM4MTjhBBkwBbkjg5uh5yZvqBHGnVedo4LJs3JtqpjB31uT4NhXSZzGAgUwkcHob56f9ANwQbcEuFAP6qSx4R8LEGLV7</div>
-
-    <!-- Button to Copy Wallet Address -->
-    <button class="button" onclick="copyWalletAddress()">Copy Monero Wallet</button>
+    <!-- Wallet Address -->
+    <p class="copy-wallet" onclick="copyWalletAddress()"><span class="wallet-address">48peM4MTjhBBkwBbkjg5uh5yZvqBHGnVedo4LJs3JtqpjB31uT4NhXSZzGAgUwkcHob56f9ANwQbcEuFAP6qSx4R8LEGLV7</span></p>
 </section>
 
-<script src="script.js"></script>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("dropdown-menu");
+        menu.classList.toggle("hidden");
+    }
+
+    function copyWalletAddress() {
+        var walletAddress = document.querySelector(".wallet-address").innerText;
+        var textArea = document.createElement("textarea");
+        textArea.value = walletAddress;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+    }
+</script>
 
 </body>
 </html>
