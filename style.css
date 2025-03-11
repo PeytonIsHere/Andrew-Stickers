@@ -134,20 +134,3 @@ section p {
 .copy-wallet:hover {
     color: darkred; /* Change color on hover */
 }
-
-.suggestions p, .suggestions a {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 18px;
-    color: white;
-}
-
-.suggestions a {
-    color: #D72638;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.suggestions a:hover {
-    text-decoration: underline;
-}
